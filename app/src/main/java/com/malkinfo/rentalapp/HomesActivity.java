@@ -2,7 +2,6 @@ package com.malkinfo.rentalapp;
 
 
 
-import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
 import androidx.annotation.NonNull;
@@ -12,10 +11,8 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.util.Log;
-import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import com.bumptech.glide.Glide;
 import com.google.firebase.database.ChildEventListener;
@@ -24,15 +21,9 @@ import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
-import com.malkinfo.rentalapp.DetailsActivity;
-import com.malkinfo.rentalapp.HomeAdapter;
-import com.malkinfo.rentalapp.Item;
-import com.malkinfo.rentalapp.R;
-import com.malkinfo.rentalapp.UserClass;
 import com.malkinfo.rentalapp.listeners.ItemListener;
 import java.util.ArrayList;
-import java.util.List;
-import java.util.Objects;
+
 import de.hdodenhof.circleimageview.CircleImageView;
 
 public class HomesActivity extends AppCompatActivity implements ItemListener {
